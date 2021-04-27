@@ -24,6 +24,9 @@ public class DelayedAppear : MonoBehaviour
       yield return new WaitForSeconds(10f);
       // enables the rendering of the gameObject (Sprite)
       gameObject.GetComponent<Renderer>().enabled = true;
+        Vector3 pos = transform.position;
+        pos.x = 15;
+        transform.position = pos;
     }
 
     public void hideDoor()
