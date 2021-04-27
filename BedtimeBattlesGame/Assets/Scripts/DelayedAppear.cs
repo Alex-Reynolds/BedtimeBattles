@@ -21,7 +21,7 @@ public class DelayedAppear : MonoBehaviour
     public IEnumerator doorAppear()
     {
       // yield return is the point at which execution will pause and be resumed following the conditional or delayed action.
-      yield return new WaitForSeconds(5f);
+      yield return new WaitForSeconds(10f);
       // enables the rendering of the gameObject (Sprite)
       gameObject.GetComponent<Renderer>().enabled = true;
     }

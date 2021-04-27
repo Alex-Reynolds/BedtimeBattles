@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class loadLevel : MonoBehaviour
 {
-  /*  public int levelToLoad;
+/*
+    public int levelToLoad;
 
     private void onTriggerEnter2D(Collider2D collision)
     {
       GameObject collisionGameObject = collision.gameObject;
 
-      if(collisionGameObject.name == "Player")
+      if(collisionGameObject.collider.name == "Player")
       {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelToLoad);
       }
     }
     */

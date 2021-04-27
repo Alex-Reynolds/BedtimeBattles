@@ -7,11 +7,12 @@ public class Player : MonoBehaviour {
   public int currentHealth = 0;
 
   public HealthBar healthBar;
-    public GameObject Button;
+  public GameObject Button, Text;
 
   void Start() {
       currentHealth = maxHealth;
       Button.SetActive(false);
+      Text.SetActive(false);
       healthBar.SetMaxHealth(maxHealth);
   }
 
@@ -37,6 +38,11 @@ public class Player : MonoBehaviour {
     }else if(col.gameObject.tag == "Finish")
         {
             TakeDamage(currentHealth);
+        }
+        else if(col.collider.name == "Level Loader")
+        {
+          Text.SetActive(true);
+          gameObject.SetActive(false);
         }
   }
 
