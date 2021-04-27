@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
+
     public float movementSpeed;
     public Rigidbody2D rb;
 
@@ -48,4 +50,6 @@ public class playerMovement : MonoBehaviour
 
       return false;
     }
+
+
 }
