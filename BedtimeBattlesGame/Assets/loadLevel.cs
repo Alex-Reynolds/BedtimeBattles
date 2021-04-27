@@ -17,20 +17,20 @@ public class loadLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //onTriggerEnter2D()
     }
 
     private void onTriggerEnter2D(Collider2D collision)
     {
       GameObject collisionGameObject = collision.gameObject;
 
-      if(collisionGameObject.name == "Player")
+      if(collisionGameObject.tag == "Player")
       {
         LoadScene();
       }
     }
 
-    void LoadScene()
+    public void LoadScene()
     {
       if(useIntegerToLoadLevel)
       {
