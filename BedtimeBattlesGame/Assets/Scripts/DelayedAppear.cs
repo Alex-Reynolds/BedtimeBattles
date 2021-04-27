@@ -22,12 +22,13 @@ public class DelayedAppear : MonoBehaviour
     {
       // yield return is the point at which execution will pause and be resumed following the conditional or delayed action.
       yield return new WaitForSeconds(5f);
-      // disables the rendering of the gameObject (Sprite)
+      // enables the rendering of the gameObject (Sprite)
       gameObject.GetComponent<Renderer>().enabled = true;
     }
 
     public void hideDoor()
     {
+      // disables the rendering of the gameObject (Sprite)
       gameObject.GetComponent<Renderer>().enabled = false;
     }
 
