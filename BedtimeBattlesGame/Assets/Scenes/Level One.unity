@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 53063827}
   m_Layer: 0
   m_Name: BrainEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236447970}
   m_LocalRotation: {x: -0, y: -0, z: 0.0017227321, w: 0.9999985}
-  m_LocalPosition: {x: -5.04, y: -5.47, z: 0}
+  m_LocalPosition: {x: -5.87, y: -4.75, z: 0}
   m_LocalScale: {x: 1.9999217, y: 1.9772294, z: 2}
   m_Children:
   - {fileID: 1413471143}
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 322837088}
   m_Layer: 0
   m_Name: BrainEnemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

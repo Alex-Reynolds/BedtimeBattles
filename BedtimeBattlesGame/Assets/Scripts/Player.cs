@@ -27,7 +27,11 @@ public class Player : MonoBehaviour {
   void OnCollisionEnter2D(Collision2D col) {
     if (col.gameObject.tag == "Enemy") {
       TakeDamage(20);
-    }
+    }else if(col.collider.name == "BrainEnemy1" ||
+            col.collider.name == "BrainEnemy2")
+        {
+            TakeDamage(5);
+        }
   }
 
 }
