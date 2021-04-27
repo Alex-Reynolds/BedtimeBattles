@@ -7,18 +7,21 @@ public class Player : MonoBehaviour {
   public int currentHealth = 0;
 
   public HealthBar healthBar;
+    public GameObject Button;
 
   void Start() {
       currentHealth = maxHealth;
+      Button.SetActive(false);
       healthBar.SetMaxHealth(maxHealth);
   }
 
   // Update is called once per frame
-  //void Update() {
-    //if (Input.GetKeyDown(KeyCode.Space)) {
-    //  TakeDamage(20);
-    //}
-  //}
+  void Update() {
+    if (currentHealth <= 0) {
+            Button.SetActive(true);
+            gameObject.SetActive(false);
+    }
+  }
 
   void TakeDamage(int damage) {
     currentHealth -= damage;
@@ -29,8 +32,11 @@ public class Player : MonoBehaviour {
       TakeDamage(20);
     }else if(col.collider.name == "BrainEnemy1" ||
             col.collider.name == "BrainEnemy2")
-        {
+    {
             TakeDamage(5);
+    }else if(col.gameObject.tag == "Finish")
+        {
+            TakeDamage(currentHealth);
         }
   }
 
